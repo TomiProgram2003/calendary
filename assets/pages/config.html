@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Title -->
+  <title>Calendario - Rutina</title>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Css -->
+  <link rel="stylesheet" href="./config.css">
+  <!-- Js -->
+  <script src="./config.js" defer></script>
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/7f5cd66326.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main class="container">
+    <h1>Rutina</h1>
+
+    <!-- Volver al menú -->
+    <a href="/index.html" class="backButton">
+      <i class="fa-solid fa-caret-left"></i>
+    </a>
+
+    <!-- Tabla de rutina con días de la semana -->
+    <table id="routine" border="1">
+      <thead>
+        <tr>
+          <th>Lunes</th>
+          <th>Martes</th>
+          <th>Miércoles</th>
+          <th>Jueves</th>
+          <th>Viernes</th>
+          <th>Sábado</th>
+          <th>Domingo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Aquí se añadirán las filas dinámicamente -->
+      </tbody>
+    </table>
+
+    <!-- Botones para controlar las filas -->
+    <button onclick="agregarFila()">Añadir fila</button>
+    <button onclick="eliminarFila()">Eliminar última fila</button>
+    <button onclick="guardarDatos()">Guardar en localStorage</button>
+    <button onclick="borrarDatos()">Borrar localStorage y limpiar tabla</button>
+  </main>
+</body>
+</html>
